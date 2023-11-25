@@ -1,0 +1,67 @@
+.expandable {
+  /* background: #fff; */
+  overflow: hidden;
+  /* color: #000;    */
+
+  /* transition: all .5s ease-in-out;
+  transform-origin: left top;
+  transform: scaleY(0); */
+  position: relative;
+  animation: mymove 1s;
+}
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -100vh;
+  }
+}
+
+.expandable_show {
+  /* transform: scaleY(1); */
+  animation: mymove2 0.5s;
+}
+
+@keyframes mymove2 {
+  from {
+    top: 50vh;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.down {
+  overflow: hidden;
+  position: relative;
+  animation: mydown 0.8s;
+}
+
+@keyframes mydown {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+.down_show {
+  /* transform: scaleY(1); */
+  animation: mydown2 0.5s;
+}
+
+@keyframes mydown2 {
+  from {
+    top: -100vh;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.text-right {
+  float: right;
+}
